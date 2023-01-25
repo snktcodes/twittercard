@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>snktCodes - Open AI</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500&display=swap');
+  </style>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- <div id="app">
+    <div id="chat_container"></div>
+   
+    <form>
+      <textarea name="prompt1" rows="1" cols="1" placeholder="Favourite Movie..."></textarea>
+      <textarea name="prompt2" rows="1" cols="1" placeholder="Favourite Books..."></textarea>
+      <textarea name="prompt3" rows="1" cols="1" placeholder="Favourite Cuisine..."></textarea>
+      <button type="submit"><img src="./assets/send.svg" alt="send" />
+    </form>
+  </div> -->
+  <img style="    height: 100px;
+  margin: 1%;" src="./assets/logo.png" alt="">
+  <!-- <p style="    font-size: 28px;
+  margin: 1%;
+  width: 20%;
+  float: right;">snktCodes</p> -->
+  <br>
+  <p style="width: 100%;text-align: center;font-size: 40px;color: white;">AI-Generated Twitter Post</p>
+  <br>
+  <p style="width: 100%;text-align: center;font-size: 30px;color: white;">Generate a viral post for your twitter!!</p><br>
+  <div id="app" style="    width: 100%;
+  overflow: hidden;
+  height: 100%;">
+    <!-- <div id="chat_container"></div> -->
+    <form>
+      
+      <textarea name="prompt1" rows="1" cols="1" placeholder="What did you do today?..."></textarea>
+      <textarea name="prompt2" rows="1" cols="1" placeholder="Inspirational Advice..."></textarea>
+      <div id="dropdownID">
+        <select name="cars" id="cars" onchange="leaveChange()">
+          <option style="background-color: black;" value="">--Select Post Emotion--</option>
+          <option style="background-color: black;" value="happy">Happy</option>
+          <option style="background-color: black;" value="sad">Sad</option>
+          <option style="background-color: black;" value="joyful">Joyful</option>
+          <option style="background-color: black;" value="sarcastic">Funny</option>
+        </select>
+      </div>
+<!--       <textarea name="prompt3" rows="1" cols="1" placeholder="Valentine's Favourite Movie..."></textarea>
+      <textarea name="prompt4" rows="1" cols="1" placeholder="Valentine's Favourite Hobby..."></textarea> -->
+      <button type="submit">Write a POST</button>
+    </form>
+    <!-- <div id="chat_container"></div> -->
+
+  </div>
+  <div id="chat_container"></div>
+  <button type="submit" id="TweetID" style="margin: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;opacity: 0;">Share Tweet</button>
+  <script type="module" src="./script.js"></script>
+
+  <script>
+    function leaveChange() {
+      console.log(document.getElementById("cars").value)
+      /* if (document.getElementById("cars").value != "100") {
+        document.getElementById("message").innerHTML = "Common message";
+      }
+      else {
+        document.getElementById("message").innerHTML = "Having a Baby!!";
+      } */
+    }
+  </script>
+</body>
+
+</html>
